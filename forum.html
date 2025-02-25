@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Aybu Mathematics Community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+    
+    <header role="banner">
+        <div class="logo">
+            <img src="images/aybu-math-club.png" alt="Aybu Mathematics Community Icon">          
+            <h1>Aybu Mathematics Community</h1>
+        </div>             
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Video Lectures</a></li>
+                <li><a href="forum.html" aria-current="page">Forum</a></li>                
+                <li><a href="test.html">Take Test</a></li>
+                <li><a href="scores.html">Scoreboard</a></li>
+                <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="forum" aria-labelledby="forum-heading">
+            <h2 id="forum-heading">Mathematics Forum</h2>
+            
+            <button id="new-topic-btn" class="btn-primary">New Topic</button>
+            
+            <div class="threads-container">
+                <form class="new-topic-form" style="display: none;">
+                    <input type="text" placeholder="New topic title" required>
+                    <button type="submit">Create Topic</button>
+                </form>
+
+
+                <div class="thread">
+                    <h3>Calculus Fundamentals</h3>
+                    <div class="comments visible">
+                        <div class="comment">
+                            <span class="username">MathFan123</span>
+                            <span class="timestamp">[25.02.2025 09:23:51]</span>
+                            <p>Can someone explain the chain rule with examples?</p>
+                        </div>
+                    </div>
+                    <form class="comment-form visible">
+                        <input type="text" placeholder="Your name" required>
+                        <textarea placeholder="Your comment" required></textarea>
+                        <button type="submit">Add Comment</button>
+                    </form>
+                </div>
+
+                <div class="thread">
+                    <h3>Linear Algebra Applications</h3>
+                    <div class="comments visible">
+                        <div class="comment">
+                            <span class="username">VectorMaster</span>
+                            <span class="timestamp">[25.02.2025 10:32:24]</span>
+                            <p>What are some real-world applications of eigenvectors?</p>
+                        </div>
+                    </div>
+                    <form class="comment-form visible">
+                        <input type="text" placeholder="Your name" required>
+                        <textarea placeholder="Your comment" required></textarea>
+                        <button type="submit">Add Comment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <p>&copy; 2025 Aybu Mathematics Community. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

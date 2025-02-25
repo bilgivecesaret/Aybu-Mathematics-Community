@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aybu Mathematics Community</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header role="banner">        
+        <div class="logo">
+            <img src="images/aybu-math-club.png" alt="Aybu Mathematics Community Icon">          
+            <h1>Aybu Mathematics Community - Contact Us</h1>
+        </div>     
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Video Lectures</a></li>
+                <li><a href="forum.html" aria-current="page">Forum</a></li>                
+                <li><a href="test.html">Take Test</a></li>
+                <li><a href="scores.html">Scoreboard</a></li>
+                <li><a href="contact.html">Contact Us</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="contactForm" action="#" method="POST">
+                <h1 id="title">REQUEST & SUGGESTION FORM</h1>
+                <br />
+                <input type="text" id="name" name="name" placeholder="NAME" /><br />
+                <input type="text" id="surname" name="surname" placeholder="SURNAME" /><br />
+                <input type="email" id="email" name="email" placeholder="EMAIL" /><br />
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="4" placeholder="Write your message ..."></textarea><br />
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+            <div id="successMessage" style="display: none">
+                <p>Thank you for your submission!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Aybu Mathematics Community. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

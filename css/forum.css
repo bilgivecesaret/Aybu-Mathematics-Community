@@ -1,0 +1,87 @@
+/* Forum Styles */
+#forum {
+    padding: 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.threads-container {
+    margin-top: 20px;
+}
+
+.thread {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+}
+
+.thread h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.comments {
+    margin-bottom: 20px;
+    display: none; /* Hide comments by default */
+}
+
+.comments.visible {
+    display: block; /* Show comments when toggled */
+}
+
+.comment {
+    background: white;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+
+.timestamp {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.comment-form {
+    display: none;    
+}
+
+.comment-form.visible {
+    display: flex; /* Show comments when toggled */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+.comment-form button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.comment-form button:hover {
+    background: var(--primary-dark);
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}

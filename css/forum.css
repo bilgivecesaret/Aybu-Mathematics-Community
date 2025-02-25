@@ -10,6 +10,12 @@
     margin-top: 20px;
 }
 
+.new-topic-form input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
 .thread {
     margin-bottom: 30px;
     padding: 20px;
@@ -74,14 +80,4 @@
 
 .comment-form button:hover {
     background: var(--primary-dark);
-}
-
-.btn-primary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
 }

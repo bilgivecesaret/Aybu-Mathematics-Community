@@ -89,25 +89,6 @@ footer:hover {
 }
 
 
-.btn-primary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
-}
-
-.btn-secondary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border-radius: .3rem;
-}
-
 /* VIP Scientist Section */
 #vip-scientist {
     padding: 20px;
@@ -217,8 +198,4 @@ footer:hover {
     height: 100%;
     border: none;
     border-radius: 5px;
-}
-
-#successMessage{
-    display: none;
 }

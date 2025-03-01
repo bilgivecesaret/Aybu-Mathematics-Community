@@ -16,29 +16,31 @@
         <nav role="navigation" aria-label="Main navigation">
             <ul>                
                 <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="videos.html">Video Lectures</a></li>
-                <li><a href="forum.html" aria-current="page">Forum</a></li>                
+                <li><a href="forum.html">Forum</a></li>
                 <li><a href="test.html">Take Test</a></li>
                 <li><a href="scores.html">Scoreboard</a></li>
-                <li><a href="contact.html">Contact Us</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html" aria-current="page">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="form-container">
-            <form id="contactForm" action="#" method="GET">
+            <form id="contactForm" action="#" method="POST">
                 <h1 id="title">REQUEST & SUGGESTION FORM</h1>
                 <br />
                 <input type="text" id="name" name="name" placeholder="NAME" /><br />
                 <input type="text" id="surname" name="surname" placeholder="SURNAME" /><br />
                 <input type="email" id="email" name="email" placeholder="EMAIL" /><br />
-                <label for="message">Message</label><br />
+                <label for="message">Message:</label><br />
                 <textarea id="message" name="message" rows="4" placeholder="Write your message ..."></textarea><br />
-                <input id="submit" class="btn-primary" type="submit" value="Submit"/>
+                <input id="submit" type="submit" value="Submit" />
             </form>
-            <div id="successMessage">
-                <p>Thank you for your submission !</p>
+            <div id="successMessage" style="display: none">
+                <p>Thank you for your submission!</p>
             </div>
         </div>
     </main>

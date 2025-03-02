@@ -3,7 +3,7 @@
 /* Definition of global variables for common colors */
 :root {
     --primary-color: #4CAF50;
-    --primary-dark: #45a049;
+    --primary-dark: #09a311;
     --background-light: #f4f4f4;
     --background-dark: #333;
     --text-light: #fff;
@@ -30,7 +30,7 @@ header {
     height: 25%;
     background: var(--primary-color);
     color: var(--text-light);
-    padding: 2% 0;
+    padding: 1% 0;
     text-align: center;
     transition: background-color var(--transition-speed);   
 }
@@ -65,12 +65,13 @@ nav ul li a {
     color: var(--text-light);
     text-decoration: none;
     border-radius: var(--border-radius);
-    transition: background-color var(--transition-speed);
+    transition: color var(--transition-speed);
    
 }
 
 nav ul li a:hover {
-    background-color: var(--primary-dark);
+    color: var(--text-dark);
+    font-weight: bold;
 }
 
 

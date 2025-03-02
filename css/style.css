@@ -35,6 +35,10 @@ header {
     transition: background-color var(--transition-speed);   
 }
 
+header h1{
+    padding-top: 1.5%;
+}
+
 .logo{
     display: flex;
     justify-content: center;  
@@ -42,7 +46,7 @@ header {
 }
 
 .logo img{
-    width: 7%;
+    width: 10%;
 }
 
 header:hover {
@@ -225,4 +229,14 @@ footer:hover {
     font-size: 1rem;
     line-height: 1;
     border-radius: .3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo h1, header a {
+        font-size: small;
+    }
+    .logo img{
+        aspect-ratio: 4/3;
+    }
 }

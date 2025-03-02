@@ -1,4 +1,4 @@
-/* FAQ Sayfası İçeriği */
+/* FAQ Page Contents */
 .faq-content {
     width: 80%;
     max-width: 900px;
@@ -9,14 +9,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Başlık Stil */
+/* Title Style */
 .faq-content h2 {
     text-align: center;
     color: var(--text-dark);
     margin-bottom: 20px;
 }
 
-/* Accordion (details ve summary) için Stiller */
+/* Styles for Accordion (details and summary) */
 details {
     background: var(--background-light);
     border-radius: var(--border-radius);
@@ -45,7 +45,7 @@ details p {
     font-size: 14px;
 }
 
-/* Responsive Tasarım */
+/* Responsive Design */
 @media (max-width: 768px) {
     .faq-content {
         width: 95%;

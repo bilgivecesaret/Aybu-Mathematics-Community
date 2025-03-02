@@ -55,6 +55,7 @@
     gap: 10px;
 }
 
+.new-topic-form input,
 .comment-form input,
 .comment-form textarea {
     padding: 10px;
@@ -76,12 +77,7 @@
     background: var(--primary-dark);
 }
 
-.btn-primary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: .3rem;
+.new-topic{
+    margin: 1% 0;
+    display: block; /* Hidden by default */
 }

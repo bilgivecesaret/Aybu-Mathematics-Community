@@ -1,7 +1,4 @@
-
-
-
-/* Login Form Stili */
+/* Login Form Style */
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -56,7 +53,7 @@
     text-decoration: underline;
 }
 
-/* Sosyal Medya Giriş Butonları */
+/* Social Media Login Buttons */
 .social-login {
     margin-top: 15px;
 }

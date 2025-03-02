@@ -9,6 +9,7 @@
 </head>
 <body>
     
+    <!-- Navigation bar -->
     <header role="banner">
         <div class="logo">
             <img src="images/aybu-math-club.png" alt="Aybu Mathematics Community Icon">          
@@ -31,18 +32,21 @@
     <main>
         <section id="forum" aria-labelledby="forum-heading">
             <h2 id="forum-heading">Mathematics Forum</h2>
-            
             <button id="new-topic-btn" class="btn-primary">New Topic</button>
-            
-            <div class="threads-container">
-                <form class="new-topic-form" style="display: none;">
+            <!-- Forum management -->
+            <div class="new-topic">               
+                <!-- Adding a new topic -->
+                <form class="new-topic-form">
                     <input type="text" placeholder="New topic title" required>
-                    <button type="submit">Create Topic</button>
+                    <button type="submit" class="btn-secondary">Create Topic</button>
                 </form>
-
-
+            </div>           
+            <!-- Forum Sheet -->
+            <div class="threads-container">     
+                <!-- Forum Topics -->
                 <div class="thread">
                     <h3>Calculus Fundamentals</h3>
+                    <!-- comments -->
                     <div class="comments visible">
                         <div class="comment">
                             <span class="username">MathFan123</span>
@@ -57,8 +61,10 @@
                     </form>
                 </div>
 
+                <!-- Forum Topics -->
                 <div class="thread">
                     <h3>Linear Algebra Applications</h3>
+                     <!-- comments -->
                     <div class="comments visible">
                         <div class="comment">
                             <span class="username">VectorMaster</span>

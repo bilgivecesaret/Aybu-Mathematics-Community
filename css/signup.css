@@ -1,5 +1,4 @@
-
-/* Signup formunun container'ı */
+/* Signup Style */
 .signup-container {
     width: 100%;
     max-width: 400px;
@@ -53,14 +52,4 @@
 
 .login-link a:hover {
     text-decoration: underline;
-}
-
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background: #4CAF50;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }

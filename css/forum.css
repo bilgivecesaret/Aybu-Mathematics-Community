@@ -1,4 +1,13 @@
 /* Forum Styles */
+
+/* Definition of global variables for common colors */
+:root {
+    --secondary-color: #4c65af;
+    --secondary-dark: #0925a3;
+    --secondary-light: #fff2f2;
+    --secondary-dark: #ffacac;
+}
+
 #forum {
     padding: 20px;
     background: white;
@@ -73,11 +82,14 @@
     transition: background-color var(--transition-speed);
 }
 
+.new-topic-form button {
+    padding: 5px 10px;
+}
 .comment-form button:hover {
     background: var(--primary-dark);
 }
 
-.new-topic{
+.new-topic-form{
     margin: 1% 0;
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
 }

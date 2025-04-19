@@ -53,3 +53,8 @@
 .login-link a:hover {
     text-decoration: underline;
 }
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin: 5px 0 10px 0;
+}

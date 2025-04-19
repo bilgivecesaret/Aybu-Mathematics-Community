@@ -75,3 +75,8 @@
     background: #3b5998 !important;
     color: white !important;
 }
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin: 5px 0 10px 0;
+}

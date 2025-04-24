@@ -10,8 +10,20 @@ $(function() {
     };
 
     // Validate required fields
-    if (!formData.name || !formData.surname || !formData.email || !formData.message) {
-      alert("Please fill in all required fields");
+    if (!formData.name) {
+      alert("Please fill in the name fields");
+      return;
+    }
+    if (!formData.surname) {
+      alert("Please fill in the surname fields");
+      return;
+    }
+    if (!formData.email) {
+      alert("Please fill in the email fields");
+      return;
+    }
+    if (!formData.message) {
+      alert("Please fill in the message fields");
       return;
     }
 
@@ -19,20 +31,8 @@ $(function() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       alert("Please enter a valid email address");
       return;
-    }
-
-    // Submit form data (mock implementation)
-    $.ajax({
-      type: "POST",
-      url: "/submit-contact",
-      data: formData,
-      success: function(response) {
-        $("#successMessage").show().delay(3000).fadeOut();
-        $("#contactForm")[0].reset();
-      },
-      error: function() {
-        alert("There was an error submitting your message. Please try again.");
-      }
-    });
+    }  
+    
+    $("#successMessage").css("display", "block");
   });
 });

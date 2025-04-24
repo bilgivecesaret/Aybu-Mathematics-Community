@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <meta name="keywords" content="math, mathematics, community, learning, education">
     <meta name="author" content="Ugur OZKAN and Bahri KESKIN">
     <title>FAQ - Aybu Mathematics Community</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="./jquery-ui-1.14.1/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/faq.css">
 </head>
+
 <body>
 
     <!-- Navigation bar -->
@@ -28,61 +31,68 @@
                 <li><a href="scores.html">Scoreboard</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="faq.html" aria-current="page">FAQ</a></li>
-                
+
             </ul>
         </nav>
     </header>
 
-    <main>
-         <!-- Frequently Asked Questions and Answers -->
-        <section class="faq-content">
-            <h2>Got Questions? We Have Answers!</h2>
-            <details>
-                <summary>How can I join the community?</summary>
+    <main class="faq-content">
+        <!-- Frequently Asked Questions and Answers -->
+        <h2>Got Questions? We Have Answers!</h2>
+        <div id="accordion">
+            <h3>How can I join the community?</h3>
+            <div>
                 <p>You can join by signing up on our website and participating in discussions.</p>
-            </details>
-            <details>
-                <summary>What kind of events do you host?</summary>
-                <p>We organize problem-solving sessions, competitions, and guest lectures by renowned mathematicians.</p>
-            </details>
-            <details>
-                <summary>How can I contribute?</summary>
+            </div>
+            <h3>What kind of events do you host?</h3>
+            <div>
+                <p>We organize problem-solving sessions, competitions, and guest lectures by renowned mathematicians.
+                </p>
+            </div>
+            <h3>How can I contribute?</h3>
+            <div>
                 <p>You can contribute by sharing problems, writing blog posts, or mentoring new members.</p>
-            </details>
-            <details>
-                <summary>Are the events free to attend?</summary>
-                <p>Yes! Most of our events are free for all members, while some special workshops may require a small fee.</p>
-            </details>
-            <details>
-                <summary>Who can participate in the competitions?</summary>
+            </div>
+            <h3>Are the events free to attend?</h3>
+            <div>
+                <p>Yes! Most of our events are free for all members, while some special workshops may require a small
+                    fee.
+                </p>
+            </div>
+            <h3>Who can participate in the competitions?</h3>
+            <div>
                 <p>Anyone with an interest in mathematics is welcome to join our competitions.</p>
-            </details>
-            <details>
-                <summary>Can I suggest a new topic for discussion?</summary>
+            </div>
+            <h3>Can I suggest a new topic for discussion?</h3>
+            <div>
                 <p>Of course! We welcome topic suggestions via our forum or email.</p>
-            </details>
-            <details>
-                <summary>How often are new topics added to the forum?</summary>
+            </div>
+            <h3>How often are new topics added to the forum?</h3>
+            <div>
                 <p>New topics are added weekly, based on community interest and member suggestions.</p>
-            </details>
-            <details>
-                <summary>Is there a mentorship program?</summary>
+            </div>
+            <h3>Is there a mentorship program?</h3>
+            <div>
                 <p>Yes! Our experienced members offer mentorship programs for students and beginners in mathematics.</p>
-            </details>
-            <details>
-                <summary>What resources are available for learning?</summary>
+            </div>
+            <h3>What resources are available for learning?</h3>
+            <div>
                 <p>We provide video lectures, problem sets, and reference materials for all members.</p>
-            </details>
-            <details>
-                <summary>Do I need a background in mathematics to join?</summary>
+            </div>
+            <h3>Do I need a background in mathematics to join?</h3>
+            <div>
                 <p>No! We welcome learners of all levels, from beginners to advanced mathematicians.</p>
-            </details>
-        </section>
+            </div>
+        </div>
     </main>
-    
+
     <footer role="contentinfo">
         <p>&copy; 2025 Aybu Mathematics Community. All rights reserved.</p>
         <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
     </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./jquery-ui-1.14.1/jquery-ui.js"></script>
+    <script src="./js/faq.js"></script>
 </body>
+
 </html>

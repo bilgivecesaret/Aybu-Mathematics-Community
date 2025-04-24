@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updateActiveProfile(currentIndex);
     });
 
+    setInterval(function(){
+        currentIndex = (currentIndex + 1) % profiles.length;
+        updateActiveProfile(currentIndex);
+    },5000);
+
     // Initialize the first profile as active
     updateActiveProfile(currentIndex);
 });

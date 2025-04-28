@@ -132,40 +132,5 @@ function addComment(form, username, commentText) {
     `;
     
     commentsContainer.appendChild(commentDiv);
-    
-    // Save comment to localStorage
-    const threadId = form.closest('.thread').querySelector('h3').textContent;
-    saveComment(threadId, username, commentText, timestamp);
-}
 
-function saveComment(threadId, username, comment, timestamp) {
-    const comments = JSON.parse(localStorage.getItem(threadId) || '[]');
-    comments.push({ username, comment, timestamp });
-    localStorage.setItem(threadId, JSON.stringify(comments));
 }
-
-function loadComments() {
-    const threads = document.querySelectorAll('.thread');
-    
-    threads.forEach(thread => {
-        const threadId = thread.querySelector('h3').textContent;
-        const comments = JSON.parse(localStorage.getItem(threadId) || '[]');
-        const commentsContainer = thread.querySelector('.comments');
-        
-        comments.forEach(comment => {
-            const commentDiv = document.createElement('div');
-            commentDiv.className = 'comment';
-            
-            commentDiv.innerHTML = `
-                <span class="username">${comment.username}</span>
-                <span class="timestamp">[${comment.timestamp}]</span>
-                <p>${comment.comment}</p>
-            `;
-            
-            commentsContainer.appendChild(commentDiv);
-        });
-    });
-}
-
-// Load existing comments when page loads
-loadComments();

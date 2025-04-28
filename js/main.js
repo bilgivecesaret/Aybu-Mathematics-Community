@@ -1,37 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const profiles = document.querySelectorAll(".scientist-profile");
-    const prevBtn = document.querySelector(".prev-btn");
-    const nextBtn = document.querySelector(".next-btn");
-    let currentIndex = 0;
-
-    // Function to update the active profile
-    function updateActiveProfile(index) {
-        profiles.forEach((profile, i) => {
-            if (i === index) {
-                profile.classList.add("active");
-            } else {
-                profile.classList.remove("active");
-            }
+(function ($) {
+    $.fn.profileSlider = function () {
+        const settings = $.extend({
+            profileSelector: '.scientist-profile',
+            prevBtnSelector: '.prev-btn',
+            nextBtnSelector: '.next-btn',
+            interval: 5000
         });
-    }
 
-    // Event listener for the previous button
-    prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + profiles.length) % profiles.length;
-        updateActiveProfile(currentIndex);
-    });
+        return this.each(function () {
+            const container = $(this);
+            const profiles = container.find(settings.profileSelector);
+            const prevBtn = container.find(settings.prevBtnSelector);
+            const nextBtn = container.find(settings.nextBtnSelector);
+            let currentIndex = 0;
 
-    // Event listener for the next button
-    nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % profiles.length;
-        updateActiveProfile(currentIndex);
-    });
+            function updateActiveProfile(index) {
+                profiles.removeClass('active');
+                profiles.eq(index).addClass('active');
+            }
 
-    setInterval(function(){
-        currentIndex = (currentIndex + 1) % profiles.length;
-        updateActiveProfile(currentIndex);
-    },5000);
+            prevBtn.on('click', function () {
+                currentIndex = (currentIndex - 1 + profiles.length) % profiles.length;
+                updateActiveProfile(currentIndex);
+            });
 
-    // Initialize the first profile as active
-    updateActiveProfile(currentIndex);
+            nextBtn.on('click', function () {
+                currentIndex = (currentIndex + 1) % profiles.length;
+                updateActiveProfile(currentIndex);
+            });
+
+            setInterval(function () {
+                currentIndex = (currentIndex + 1) % profiles.length;
+                updateActiveProfile(currentIndex);
+            }, settings.interval);
+
+            updateActiveProfile(currentIndex);
+        });
+    };
+}(jQuery));
+
+$(function () {
+    $('.scientist-slider').profileSlider();
 });

@@ -1,3 +1,41 @@
+$(function () {
+  $("#su-birthdate").datepicker();
+});
+
+const countries = [
+  "United States",
+  "China",
+  "India",
+  "Indonesia",
+  "Pakistan",
+  "Brazil",
+  "Nigeria",
+  "Bangladesh",
+  "Russia",
+  "Mexico",
+  "Japan",
+  "Ethiopia",
+  "Philippines",
+  "Egypt",
+  "Vietnam",
+  "DR Congo",
+  "Türkiye",
+  "Iran",
+  "Germany",
+  "Thailand",
+  "United Kingdom",
+  "France",
+  "Italy",
+  "Tanzania",
+  "South Africa",
+];
+
+//  for auto complete country
+$("#su-country").autocomplete({
+  source: countries
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('signupForm');
     const errorMessage = document.getElementById('signup-error-message');
@@ -5,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
   
+      const name = document.getElementById('su-name').value.trim();
+      const surname = document.getElementById('su-surname').value.trim();      
+      const country = document.getElementById('su-country').value.trim();
+      const birthdate = document.getElementById('su-birthdate').value.trim();
       const username = document.getElementById('su-username').value.trim();
       const email = document.getElementById('su-email').value.trim();
       const password = document.getElementById('su-password').value;
@@ -12,12 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
       // Clear previous error
       errorMessage.textContent = '';
-  
-      // Basic validation
-      if (!username || !email || !password || !confirm) {
-        errorMessage.textContent = 'Please fill in all fields.';
-        return;
-      }
   
       if (password !== confirm) {
         errorMessage.textContent = 'Passwords do not match.';
@@ -28,15 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!email.includes('@') || !email.includes('.')) {
         errorMessage.textContent = 'Invalid email format. Please use a valid email address.';
         return;
-      }
-  
-      
-      if (users.some(u => u.username === username || u.email === email)) {
-        errorMessage.textContent = 'This username or email is already registered.';
-        return;
-      }
-  
-     
+      } 
   
       // Optional: clear form
       form.reset();

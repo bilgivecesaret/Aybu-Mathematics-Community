@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,9 +7,11 @@
     <meta name="keywords" content="math, mathematics, community, learning, education">
     <meta name="author" content="Ugur OZKAN and Bahri KESKIN">
     <title>Sign Up - Aybu Mathematics Community</title>
+    <link rel="stylesheet" href="./jquery-ui-1.14.1/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/signup.css">
 </head>
+
 <body>
 
     <!-- Navigation bar -->
@@ -19,7 +22,7 @@
         </div>
         <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>                
+                <li><a href="index.html">Home</a></li>
                 <li><a href="videos.html">Video Lectures</a></li>
                 <li><a href="forum.html">Forum</a></li>
                 <li><a href="test.html">Take Test</a></li>
@@ -30,27 +33,34 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <!-- Registration process -->
-        <div class="signup-container">
+        <section class="signup-container">
             <form id="signupForm" action="#" method="POST">
                 <h2>Create an Account</h2>
-                <input id="su-username" type="text" name="username" placeholder="Username" required>
-                <input id="su-email"    type="email" name="email"    placeholder="Email" required>
-                <input id="su-password" type="password" name="password" placeholder="Password" required>
-                <input id="su-confirm"  type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input id="su-name" type="text" name="name" placeholder="Enter your Name" required>
+                <input id="su-surname" type="text" name="surname" placeholder="Enter your Surname" required>
+                <input id="su-country" type="text" name="country" placeholder="Enter your Country" required>
+                <input id="su-birthdate" type="text" name="birthdate" placeholder="Enter your Birthdate" required>
+                <input id="su-username" type="text" name="username" placeholder="Enter your Username" required>
+                <input id="su-email" type="email" name="email" placeholder="Enter your Email" required>
+                <input id="su-password" type="password" name="password" placeholder="Enter your Password" required>
+                <input id="su-confirm" type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <p id="signup-error-message" class="error-message"></p>
                 <button type="submit">Sign Up</button>
                 <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
             </form>
-        </div>
+        </section>
     </main>
-    
+
     <footer role="contentinfo">
         <p>&copy; 2025 Aybu Mathematics Community. All rights reserved.</p>
         <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
     </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./jquery-ui-1.14.1/jquery-ui.js"></script>
     <script src="./js/signup.js"></script>
 </body>
+
 </html>

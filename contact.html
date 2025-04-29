@@ -7,6 +7,7 @@
     <meta name="keywords" content="math, mathematics, community, learning, education">
     <meta name="author" content="Ugur OZKAN and Bahri KESKIN">
     <title>Contact Us - Aybu Mathematics Community</title>
+    <link rel="stylesheet" href="./jquery-ui-1.14.1/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
 </head>
@@ -37,17 +38,18 @@
         <div class="form-container">
             <form id="contactForm">
                 <h1 id="title">REQUEST & SUGGESTION FORM</h1>
-                <br />
-                <input type="text" id="name" name="name" placeholder="NAME" /><br />
-                <input type="text" id="surname" name="surname" placeholder="SURNAME" /><br />
-                <input type="email" id="email" name="email" placeholder="EMAIL" /><br />
-                <label for="message">Message:</label><br />
-                <textarea id="message" name="message" rows="4" placeholder="Write your message ..."></textarea><br />
+                <input type="text" id="name" name="name" placeholder="Enter your NAME" />
+                <input type="text" id="surname" name="surname" placeholder="Enter your SURNAME" />
+                <input type="text" id="country" name="country" placeholder="Enter your CONTRY" />
+                <input type="email" id="email" name="email" placeholder="Enter your EMAIL" /><br/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message ..."></textarea>
                 <input id="submit" class="btn-secondary" type="submit" value="Submit" />
             </form>
             <div id="successMessage">
                 <p>Thank you for your submission!</p>
             </div>
+            <div id="dialog" title="Attention please"></div>
         </div>
     </main>
 
@@ -56,6 +58,7 @@
         <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
     </footer>
     <script src="./js/jquery.js"></script>
+    <script src="./jquery-ui-1.14.1/jquery-ui.js"></script>
     <script src="./js/contactus.js"></script>
     <script src="./js/main.js"></script>
 </body>

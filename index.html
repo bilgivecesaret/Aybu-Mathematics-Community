@@ -8,6 +8,7 @@
     <meta name="keywords" content="math, mathematics, community, learning, education">
     <meta name="author" content="Ugur OZKAN and Bahri KESKIN">
     <title>Aybu Mathematics Community</title>
+    <link rel="stylesheet" href="./bxslider-4-4.2.17/css/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -42,19 +43,19 @@
         </section>
 
         <!-- Fact cards about Featured Mathematicians-->
-        <section class="scientist-slider" id="vip-scientist" aria-labelledby="scientists-heading">
+        <section id="vip-scientist" >
             <h2 id="scientists-heading">Featured Mathematicians</h2>
-            <div class="scientist-carousel" role="region" aria-label="Mathematicians carousel">
+            <div class="scientist-cards-slider">            
                 <!-- Card 1 -->
-                <article class="scientist-profile" role="article" aria-labelledby="euclid-title">
+                <div>
                     <img src="./images/euclid.jpg" alt="Portrait of Euclid" class="scientist-image">
                     <div class="scientist-info">
                         <h3 id="euclid-title">Euclid</h3>
                         <p>Known as the "Father of Geometry", Euclid authored the Elements, one of the most influential works in mathematics history.</p>
                     </div>
-                </article>
+                </div>
                 <!-- Card 2 -->
-                <div class="scientist-profile active">
+                <div>
                     <img src="./images/pythagoras.jpg" alt="Pythagoras" class="scientist-image">
                     <div class="scientist-info">
                         <h3>Pythagoras</h3>
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="scientist-profile">
+                <div>
                     <img src="./images/archimedes.jpg" alt="Archimedes" class="scientist-image">
                     <div class="scientist-info">
                         <h3>Archimedes</h3>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="scientist-profile">
+                <div>
                     <img src="./images/newton.jpg" alt="Isaac Newton" class="scientist-image">
                     <div class="scientist-info">
                         <h3>Isaac Newton</h3>
@@ -78,17 +79,13 @@
                     </div>
                 </div>
                 <!-- Card 5 -->
-                <div class="scientist-profile">
+                <div>
                     <img src="./images/euler.jpg" alt="Leonhard Euler" class="scientist-image">
                     <div class="scientist-info">
                         <h3>Leonhard Euler</h3>
                         <p>Prolific mathematician who made important discoveries in calculus, graph theory, and number theory.</p>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-controls">
-                <button class="prev-btn">❮</button>
-                <button class="next-btn">❯</button>
             </div>
         </section>
     </main>
@@ -98,6 +95,7 @@
         <p>Contact us: <a href="mailto:aybumath@gmail.com">aybumath@gmail.com</a></p>
     </footer>
     <script src="./js/jquery.js"></script>
+    <script src="./bxslider-4-4.2.17/js/jquery.bxslider.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

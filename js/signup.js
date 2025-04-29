@@ -30,15 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
   
-      const users = JSON.parse(localStorage.getItem('users') || '[]');
+      
       if (users.some(u => u.username === username || u.email === email)) {
         errorMessage.textContent = 'This username or email is already registered.';
         return;
       }
   
-      // Register user
-      users.push({ username, email, password });
-      localStorage.setItem('users', JSON.stringify(users));
+     
   
       // Optional: clear form
       form.reset();

@@ -67,18 +67,17 @@ $(document).ready(function () {
       $("#dialog").html("Please fill in the EMAIL fields");
       return;
     }
-    if (!formData.message) {
-      $("#dialog").dialog();
-      $("#dialog").html("Please fill in the MESSAGE fields");
-      return;
-    }
-
     // Validate email format
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       $("#dialog").dialog();
       $("#dialog").html("Please enter a valid email address. \nFor example:  user@example.com");
       return;
     }  
+    if (!formData.message) {
+      $("#dialog").dialog();
+      $("#dialog").html("Please fill in the MESSAGE fields");
+      return;
+    }
     
     $("#successMessage").css("display", "block");
   });

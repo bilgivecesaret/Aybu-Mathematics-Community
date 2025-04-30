@@ -49,6 +49,17 @@
   
 #successMessage{
     display: none; /* Hidden by default */
+    color:red;
+    animation: blink-animation 4s ease-out infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Responsive Design */

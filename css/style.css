@@ -72,6 +72,47 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
+#banner{
+    position: absolute;
+    top: 5vh;
+    right: 3vw;
+    font-size: small;
+    background: #a4aea5;
+    padding: 1%;
+    margin: 0.5% 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+
+}
+
+#weather{
+    tr{
+        display: table-row;
+        td{
+            display: table-cell;
+            color:black;
+            img{
+                margin-left: 0.5vw;
+            }
+            .country{
+                color:red;
+                font-weight: 600;
+            }
+        }
+    }
+    
+}
+#banner .btn-custom{
+    display: block;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: .05rem 0.1rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: .2rem;
+}
+
 main {
     background: white;
     padding: 20px;

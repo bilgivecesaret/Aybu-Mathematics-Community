@@ -16,14 +16,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 2%;
-    font-size: large;
+    font-size: 1em;
 }
 
 header {
@@ -218,20 +218,29 @@ footer:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    * {
-        font-size: small;
-    }
+@media (max-width: 1024px) {   
+    #banner{
+        position: absolute;
+        top: 2vh;
+        right: 3vw;
+        margin: 0 auto;
+        width: fit-content;
+        font-size: .5rem;
+    } 
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {   
+    #banner{
+        position: relative;
+        top: 2%;
+        margin: 0 auto;
+        width: fit-content;
+        font-size: .75rem;
+    } 
     .logo img{
         aspect-ratio: 4/3;
     }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    * {
-        font-size: medium;
-    }  
 
     .scientist-cards-slider > div {
         flex-direction: column;
@@ -249,14 +258,22 @@ footer:hover {
         font-size: .75rem;
     }  
     li{
-        font-size: small;
+        font-size: 0.75em;
+    }
+    h1{
+        font-size: 1em;
     }
 }
 
-@media (max-width: 430px) {
-    * {
-        font-size:  small;
-    }  
+@media (max-width: 375px) {
+    
+    body {
+        font-size: 0.25em;
+    } 
+
+    #banner{
+        font-size: .25rem;
+    } 
     
     .scientist-cards-slider > div {
         flex-direction: column;
@@ -270,10 +287,9 @@ footer:hover {
     }
 
     .btn-primary, .btn-secondary{
-        padding: .0625rem .0625rem;
-        font-size: .25rem;
+        padding: .005em .005rem;
     }
-    li{
-        font-size: xx-small;
+    h1{
+        font-size: 0.25em;
     }
 }

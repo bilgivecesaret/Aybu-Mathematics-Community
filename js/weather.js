@@ -21,8 +21,7 @@ fetch(url)
                 ${description}
             </p>
             <p>              
-              Temperature: ${data.main.temp}°C (min: ${data.main.temp_min}, max: ${data.main.temp_max})<br>
-              Wind: ${data.wind.speed}m/s Cloud: ${data.clouds.all}%
+              Temperature: ${data.main.temp}°C 
             </p>
           </td>
         </tr>

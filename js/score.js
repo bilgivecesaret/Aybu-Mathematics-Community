@@ -27,10 +27,3 @@ document.addEventListener("DOMContentLoaded", function () {
     scoreboard.appendChild(newRow);
   });
 });
-
-$(function() {
-  $("#image-container").html(
-    `<img src="images/gold-cup.png" width="200" alt="Gold Cup" 
-     onerror="this.onerror=null;this.style.display='none';">
-  `);
-});

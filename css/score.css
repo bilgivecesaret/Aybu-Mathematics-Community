@@ -1,6 +1,6 @@
   /* Scoreboard Style */
   #flow{
-    width: 100%;
+    width: 50%;
   }
   .score-table {
     width: 100%;
@@ -26,3 +26,10 @@
   .score-table tr:hover {
     background-color: #107714;
   }
+
+  /* Responsive Design */
+@media (max-width: 768px) {  
+  img, #title{
+    width: 40%;
+  }
+}

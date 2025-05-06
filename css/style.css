@@ -253,7 +253,7 @@ footer:hover {
 @media (max-width: 375px) {
     
     body {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     } 
    
     .scientist-cards-slider > div {

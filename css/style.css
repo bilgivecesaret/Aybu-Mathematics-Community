@@ -21,9 +21,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     padding: 2%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 header {
@@ -76,7 +75,7 @@ nav ul li a:hover {
     position: absolute;
     top: 5vh;
     right: 3vw;
-    font-size: small;
+    font-size: 16px;
     background: #fdfcfa;
     padding: 0.5%;
     margin: 0.5% 0;
@@ -101,16 +100,6 @@ nav ul li a:hover {
         }
     }
     
-}
-#banner .btn-custom{
-    display: block;
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: .05rem 0.1rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    border-radius: .2rem;
 }
 
 main {
@@ -225,18 +214,20 @@ footer:hover {
         right: 3vw;
         margin: 0 auto;
         width: fit-content;
-        font-size: .5rem;
+        font-size: 1rem;
     } 
 
 }
 /* Responsive Design */
-@media (max-width: 768px) {   
+@media (max-width: 768px) {  
+    body {
+        font-size: 1rem;
+    }  
     #banner{
         position: relative;
         top: 2%;
         margin: 0 auto;
         width: fit-content;
-        font-size: .75rem;
     } 
     .logo img{
         aspect-ratio: 4/3;
@@ -255,26 +246,16 @@ footer:hover {
 
     .btn-primary, .btn-secondary{
         padding: .25rem .25rem;
-        font-size: .75rem;
-    }  
-    li{
-        font-size: 0.75em;
-    }
-    h1{
-        font-size: 1em;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 375px) {
     
     body {
-        font-size: 0.25em;
+        font-size: 1rem;
     } 
-
-    #banner{
-        font-size: .25rem;
-    } 
-    
+   
     .scientist-cards-slider > div {
         flex-direction: column;
         align-items: center;
@@ -287,9 +268,6 @@ footer:hover {
     }
 
     .btn-primary, .btn-secondary{
-        padding: .005em .005rem;
-    }
-    h1{
-        font-size: 0.25em;
+        padding: .05rem .05rem;
     }
 }
